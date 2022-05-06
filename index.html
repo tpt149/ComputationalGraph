@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Computational Graph</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="side-bar">
+            <div class="sidebar-input-wrap">
+                <div class="sidebar-group">
+                    <div class="sidebar-label">Nhập biểu thức</div>
+                    <div class="input-expression-group">
+                        <input tabindex=0 id="input-expression" type="text" class="input" placeholder="Nhập biểu thức">
+                        <button id="update-expression" class="btn btn-update-expresion">
+                            <i class="ti-reload" style="margin-right: 4px;"></i>
+                            Cập nhật
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sidebar-group">
+                    <div class="sidebar-label">Giá trị các biến</div>
+                    <div class="var-group" id="var-group">
+                        <!-- Nhập biến -->
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="sidebar-bottom">
+                <button class="btn btn-sidebar-clear" id="btn-clear">
+                    <i class="ti-trash" style="margin-right: 4px;"></i>
+                    Xoá
+                </button>
+                <button class="btn btn-sidebar-submit" id="btn-submit">
+                    <i class="ti-check-box" style="margin-right: 4px;"></i>
+                    Hoàn thành
+                </button>
+            </div>
+        </div>
+        <div class="right-area">
+            <div class="main-workspace" id="main-workspace">
+                <!-- Khu vực hiển thị -->
+            </div>
+            <div class="control-bar">
+                <button id="next-control-btn" class="btn">
+                    <i class="ti-control-play" style="margin-right: 4px;"></i>
+                    Tiếp
+                </button>
+                <button id="reset-control-btn" class="btn btn-reload">
+                    <i class="ti-reload" style="margin-right: 4px;"></i>
+                    Đặt lại
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
